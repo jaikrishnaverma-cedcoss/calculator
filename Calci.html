@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="calcu" id="calcu">
+            <div class="bar upper" ><div id="divbtn"><button class="sqbtn" onclick="changebg('rgb(118, 0, 0)')" id="navbtn1"></button> <button onclick="changebg('rgb(189, 164, 0)')"class="sqbtn" id="navbtn2"></button> <button onclick="changebg('rgb(0, 65, 0)')" class="sqbtn" id="navbtn3"></button></div>
+            <div>
+                <label class="switch">
+                  <input type="checkbox" onclick="changebg()" checked>
+                  <span class="slider round"></span>
+                </label></div>
+            </div>
+            <table>
+                <thead id="x1">
+                       <tr>
+                        <td colspan="4">
+                            <input id="deep" class="upper" type="text" class="input" value="00" disabled>
+                       </td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                       <tr>
+                        <td><button class="sqbtn reset sp1" onclick="cleared()">C</button></td>
+                        <td><button onclick="copyr()" class="sqbtn btn sp1" >&copy;</button></td>
+                        <td><button onclick="add(this)" class="sqbtn btn sp1" value="%">%</button></td>
+                        <td><button onclick="add(this)" class="sqbtn btn sp1" value="/">&#247;</button></td>
+                       </tr>
+                       <tr>
+                        <td><button onclick="add(this)" class="sqbtn btn sp" value="7" id="sp">7</button></td>
+                        <td><button onclick="add(this)" class="sqbtn btn sp" value="8" id="sp">8</button></td>
+                        <td><button onclick="add(this)" class="sqbtn btn sp" value="9" id="sp">9</button></td>
+                        <td><button onclick="add(this)" class="sqbtn btn sp1" value="*">&times;</button></td>
+                       </tr>
+                       <tr>
+                        <td><button onclick="add(this)" class="sqbtn btn sp" value="4" id="sp">4</button></td>
+                        <td><button onclick="add(this)" class="sqbtn btn sp" value="5" id="sp">5</button></td>
+                        <td><button onclick="add(this)" class="sqbtn btn sp" value="6" id="sp">6</button></td>
+                        <td><button onclick="add(this)" class="sqbtn btn sp1" value="-">-</button></td>
+                       </tr>
+                       <tr>
+                        <td><button onclick="add(this)" class="sqbtn btn sp" value="1" id="sp">1</button></td>
+                        <td><button onclick="add(this)" class="sqbtn btn sp" value="2" id="sp">2</button></td>
+                        <td><button onclick="add(this)" class="sqbtn btn sp" value="3" id="sp">3</button></td>
+                        <td><button onclick="add(this)" class="sqbtn btn sp1" value="+">+</button></td>
+                       </tr>
+                       <tr>
+                        <td><button onclick="add(this)" class="sqbtn btn sp" value="0" id="sp">0</button></td>
+                        <td><button onclick="add(this)" class="sqbtn btn sp" value="." id="sp">.</button></td>
+                        <td><button class="sqbtn power sp" id="sp" onclick="square()">Sq</button></td>
+                        <td><button class="sqbtn result bgbutton" onclick="result()" style="background-color: rgb(0, 204, 143);color:white">=</button></td>
+                       </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+  
+
+
+
+
+
+    <script src="support.js"></script>
+
+</body>
+</html>
